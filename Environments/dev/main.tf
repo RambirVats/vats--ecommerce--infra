@@ -14,6 +14,7 @@ module "storage_account" {
     storage_account_name = "stecommdev"
     resource_group_name = "rg-dev-ecomm-01"
     location = "East US"
+    account_tier = "Standard"
 }
 
 variable "storage_account_name" {}
