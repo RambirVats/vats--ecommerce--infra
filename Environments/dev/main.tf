@@ -1,11 +1,18 @@
 variable "rg_name" {}
 variable "rg_location" {}
-
+variable "rg_name1" {}
+variable "rg_location1" {}
 
 module "resource_group" {
     source = "../../module/resource_group"
     resource_group_name = var.rg_name
     resource_group_location = var.rg_location
+}
+
+module "resource_group1" {
+    source = "../../module/resource_group"
+    resource_group_name = var.rg_name1
+    resource_group_location = var.rg_location1
 }
 
 module "storage_account" {
